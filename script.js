@@ -35,7 +35,7 @@ function createNoteElement(id, content) {
   container.appendChild(element);
   container.appendChild(deletebtn);
 
-  element.addEventListener("change", () => {
+  element.addEventListener("input", () => {
     updateNote(id, element.value);
   });
 
