@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #009578;
+  font-family: "Open Sans", sans-serif;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+}
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 24px;
+  gap: 24px;
+  min-height: 90vh;
+  justify-content: center;
+}
+.note-container {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.note-container button {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 16px;
+  background: none;
+  outline: none;
+  border: none;
+  color: rgb(192, 62, 62);
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 8px;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+.note-container button:hover {
+  background-color: rgba(216, 215, 215, 0.432);
+  color: rgba(194, 55, 55, 0.781);
+}
+
+.note {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 7px;
+  resize: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+.add-note {
+  height: 200px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 120px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.add-note:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+}
+footer p a {
+  text-decoration: none;
+  color: rgba(255, 253, 253, 0.945);
+  transition: all 0.2s ease;
+  padding: 10px;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
